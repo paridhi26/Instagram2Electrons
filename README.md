@@ -1,8 +1,6 @@
 # Instagram to Electrons
 
-An interactice simulator that simulates how online identity travels on the internet. 
-
-**Instagram to Electrons** is an interactive visualization that shows what actually happens when you upload a photo to social media — from the moment you press **Share** to the moment the data reaches Instagram’s infrastructure.
+An interactive simulator/visualizer that shows what actually happens when you upload a photo to social media — from the moment you press **Share** to the moment the data reaches Instagram’s infrastructure.
 
 Online identity feels personal, but it is carried by a vast physical system. This project makes that system visible.
 
