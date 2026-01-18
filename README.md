@@ -1,11 +1,11 @@
 # Instagram to Electrons
 An interactice simulator that simulates how online identity travels on the internet. 
----
+--
 **Instagram to Electrons** is an interactive visualization that shows what actually happens when you upload a photo to social media — from the moment you press **Share** to the moment the data reaches Instagram’s infrastructure.
 
 Online identity feels personal, but it is carried by a vast physical system. This project makes that system visible.
 
----
+
 
 ## What this project shows
 
@@ -17,7 +17,7 @@ This project answers the question:
 
 As you scroll down the stack, the upload progresses — revealing how a single image becomes bytes, packets, signals, and finally a stored object on Instagram’s servers.
 
----
+
 
 ## The journey (end to end)
 
@@ -31,7 +31,7 @@ As you scroll down the stack, the upload progresses — revealing how a single i
 
 At this point, nothing has touched the network yet — only bytes exist in memory.
 
----
+
 
 ### 2. OS boundary — handing bytes to the kernel
 
@@ -41,7 +41,7 @@ At this point, nothing has touched the network yet — only bytes exist in memor
 
 From here on, the application is done. The OS takes over.
 
----
+
 
 ### 3. Transport layer (TCP) — reliability
 
@@ -52,7 +52,7 @@ From here on, the application is done. The OS takes over.
 
 TCP ensures the full image arrives intact and in order.
 
----
+
 
 ### 4. Network layer (IP) — routing
 
@@ -65,7 +65,7 @@ TCP ensures the full image arrives intact and in order.
 TCP cares about correctness.  
 IP cares about direction.
 
----
+
 
 ### 5. Data link layer — local delivery
 
@@ -74,7 +74,6 @@ IP cares about direction.
 - The IP packet is wrapped in a **link-layer frame** addressed to the router.
 - MAC addresses are only used locally and change at every hop.
 
----
 
 ### 6. Physical layer — bits become signals
 
@@ -86,7 +85,7 @@ The frame is transmitted as physical signals, depending on the medium:
 
 At this point, data is no longer abstract — it is physics.
 
----
+
 
 ### 7. Routers — hop-by-hop forwarding
 
@@ -105,7 +104,7 @@ Key insight:
 
 This process repeats across home routers, ISPs, backbone networks, and peering points.
 
----
+
 
 ### 8. Instagram infrastructure — arrival
 
@@ -116,7 +115,7 @@ This process repeats across home routers, ISPs, backbone networks, and peering p
 
 Your identity is now shared.
 
----
+
 
 ## What this project is (and isn’t)
 
@@ -130,7 +129,7 @@ It is a **conceptual, end-to-end visualization** that shows:
 Many entire projects can be built on just one protocol.  
 This project’s goal is to show **how they all work together**.
 
----
+
 
 ## Why this matters
 
@@ -144,7 +143,6 @@ But every photo, message, and post depends on:
 
 Understanding this stack changes how you see technology.
 
----
 
 ## Built with
 
@@ -152,7 +150,7 @@ Understanding this stack changes how you see technology.
 - Client-side state and animations
 - Conceptual models inspired by real OS and networking stacks
 
----
+
 
 ## Final note
 
